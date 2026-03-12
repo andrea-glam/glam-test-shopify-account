@@ -26,7 +26,7 @@ export async function GET() {
     authUrl.searchParams.set('response_type', 'code');
     authUrl.searchParams.set('redirect_uri', `${appUrl}/api/auth/callback`);
     authUrl.searchParams.set('state', state);
-    authUrl.searchParams.set('login_hint', 'grepdirect@gmail.com')
+   //authUrl.searchParams.set('login_hint', 'grepdirect@gmail.com')
 
     // 4. Reindirizzamento dell'utente
     return NextResponse.redirect(authUrl);
